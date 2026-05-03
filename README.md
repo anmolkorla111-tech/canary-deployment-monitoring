@@ -1,47 +1,72 @@
-Canary Deployment & Infrastructure Monitoring 🚀
-A comprehensive DevOps-driven project designed to monitor system health and manage traffic distribution using Canary deployment strategies. This project was developed as part of the BCA (Bachelor of Computer Applications) curriculum.
 
-🏗 Project Architecture
-The system is divided into three core layers:
+# 🚀 Advanced Infrastructure Monitoring & Canary Deployment
 
-Metrics Layer: Uses Python's psutil library to capture real-time CPU, RAM, and Disk utilization.
+An industry-standard implementation of real-time system observability and automated traffic-shifting strategies.
 
-Monitoring Layer: Prometheus scrapes these metrics and provides a centralized view of infrastructure health.
+---
 
-Deployment Layer: Kubernetes-ready YAML configurations manage "Canary" vs "Stable" service traffic.
+### 📂 Repository Architecture
 
-🛠 Technical Stack
-Backend: FastAPI (Python) - High-performance asynchronous API for data streaming.
+| Directory / File | Description |
+| :--- | :--- |
+| 🐍 **`/backend`** | FastAPI server handling asynchronous system metric collection. |
+| ⚛️ **`/frontend`** | Next.js dashboard featuring real-time data visualization. |
+| 📄 **`/docs`** | Detailed technical documentation and architectural screenshots. |
+| ☸️ **`*.yaml`** | Kubernetes-native manifests for Ingress and Service deployments. |
+| 🛡️ **`.gitignore`** | Security protocols to prevent exposure of local environments. |
 
-Frontend: Next.js (Tailwind CSS) - Modern dashboard for real-time visualization.
+---
 
-DevOps Tools: Prometheus, Jenkins (for CI/CD pipeline simulation), and Git/GitHub.
+### 🛠 Technical Stack
 
-Infrastructure: Kubernetes YAMLs (Ingress, Service, and Deployment manifests).
+*   **Backend:** FastAPI (Python) ⚡
+    *Optimized for high-concurrency API performance.*
 
-📊 Core Functionalities
-Real-time Monitoring: Captures system hardware metrics every second.
+*   **Frontend:** Next.js (React) 🎨
+    *Leveraged for server-side rendering and fluid UI.*
 
-Infrastructure as Code (IaC): All deployment rules are defined in YAML files for version-controlled infrastructure.
+*   **Observability:** Prometheus 🔍
+    *Used for automated metrics scraping and storage.*
 
-Traffic Management: Configured Ingress rules to demonstrate how traffic splits between different versions of an application.
+*   **Profiling:** `psutil` 📈
+    *Facilitates granular hardware utilization tracking.*
 
-📂 Repository Structure
-/backend: Contains the FastAPI application and metrics logic.
+*   **Orchestration:** Kubernetes YAML 🎡
+    *Defining automated Canary deployment patterns.*
 
-/frontend: Contains the Next.js dashboard source code.
+---
 
-/docs: Documentation and technical references.
+### 🌟 Key Functional Features
 
-Root Folder: Contains all Kubernetes and deployment YAML files.
+🔹 **Live Metrics Streaming**
+Real-time extraction of system health data via optimized API endpoints.
 
-🚀 Getting Started
-Prerequisites: Ensure Python 3.x and Node.js are installed.
+🔹 **Prometheus Integration**
+Fully configured scraping targets for centralized infrastructure monitoring.
 
-Launch Backend: Run python main.py within the backend directory.
+🔹 **Traffic Management**
+Implementation of Canary deployment strategies to minimize production risk.
 
-Launch Frontend: Run npm run dev to start the monitoring dashboard.
+🔹 **Infrastructure as Code (IaC)**
+Version-controlled networking and deployment configurations.
 
-Prometheus: Start the Prometheus service to begin scraping endpoint data.
+---
 
-Developed by Anmol | Expected Graduation: 2027
+### 🚀 Quick Start Guide
+
+1️⃣ **Clone the Repository**
+`git clone https://github.com/anmolkorla111-tech/canary-deployment-monitoring.git`
+
+2️⃣ **Activate Backend**
+`cd backend && python main.py`
+
+3️⃣ **Initialize Frontend**
+`cd frontend && npm run dev`
+
+4️⃣ **Monitor Suite**
+Verify metrics at the Prometheus dashboard (`localhost:9090`).
+
+---
+
+**Lead Developer:** Anmol  
+**Focus:** DevOps & Full-Stack Engineering (BCA 2027) 🎓
