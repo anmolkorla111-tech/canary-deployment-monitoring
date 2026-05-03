@@ -14,13 +14,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Metrics define karo
+
 CPU_USAGE = Gauge('system_cpu_usage', 'Actual CPU usage in percent')
 RAM_USAGE = Gauge('system_ram_usage', 'Actual RAM usage in percent')
 
 @app.get("/metrics")
 def metrics():
-    # Asli system metrics set karo
+    
     CPU_USAGE.set(psutil.cpu_percent())
     RAM_USAGE.set(psutil.virtual_memory().percent)
     return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
