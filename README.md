@@ -19,20 +19,20 @@ An industry-standard implementation of real-time system observability and automa
 
 ### 🛠 Technical Stack
 
+*   **Cloud Infrastructure:** Kubernetes (K8s) ☁️
+    *Managed traffic distribution and automated deployment rules.*
+
+*   **Observability:** Prometheus & Node Exporter 🔍
+    *Enterprise-grade metrics scraping and monitoring suite.*
+
 *   **Backend:** FastAPI (Python) ⚡
-    *Optimized for high-concurrency API performance.*
+    *Asynchronous API for low-latency system profiling.*
 
 *   **Frontend:** Next.js (React) 🎨
-    *Leveraged for server-side rendering and fluid UI.*
+    *Modern UI framework for live metric streaming.*
 
-*   **Observability:** Prometheus 🔍
-    *Used for automated metrics scraping and storage.*
-
-*   **Profiling:** `psutil` 📈
-    *Facilitates granular hardware utilization tracking.*
-
-*   **Orchestration:** Kubernetes YAML 🎡
-    *Defining automated Canary deployment patterns.*
+*   **Version Control:** Git & GitHub 🛠️
+    *Standardized CI/CD workflow and code management.*
 
 ---
 
@@ -41,14 +41,14 @@ An industry-standard implementation of real-time system observability and automa
 🔹 **Live Metrics Streaming**
 Real-time extraction of system health data via optimized API endpoints.
 
-🔹 **Prometheus Integration**
-Fully configured scraping targets for centralized infrastructure monitoring.
-
-🔹 **Traffic Management**
-Implementation of Canary deployment strategies to minimize production risk.
-
 🔹 **Infrastructure as Code (IaC)**
-Version-controlled networking and deployment configurations.
+Version-controlled networking and deployment configurations via YAML.
+
+🔹 **Canary Traffic Splitting**
+Simulated deployment strategies to manage "Stable" vs "Canary" service versions.
+
+🔹 **Full-Stack Observability**
+End-to-end integration from hardware metrics to the frontend dashboard.
 
 ---
 
@@ -68,5 +68,5 @@ Verify metrics at the Prometheus dashboard (`localhost:9090`).
 
 ---
 
-**Lead Developer:** Anmol  
-**Focus:** DevOps & cloud engineering (BCA 2027) 🎓
+**Lead Developer:** Anmol
+**Focus:** DevOps, Cloud Computing (BCA 2027)
