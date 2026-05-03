@@ -69,4 +69,4 @@ Verify metrics at the Prometheus dashboard (`localhost:9090`).
 ---
 
 **Lead Developer:** Anmol  
-**Focus:** DevOps & Full-Stack Engineering (BCA 2027) 🎓
+**Focus:** DevOps & cloud engineering (BCA 2027) 🎓
